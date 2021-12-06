@@ -52,7 +52,7 @@ end
 % pts2(1,1) = x2;
 % pts2(1,2) = y2;
 %% Using match feature
-p1 = [pts1(:,1) pts1(:,2) 1];
+p1 = [pts1(:,1) pts1(:,2) ones(size(pts1,1),1)];
 
 % epipolar line
 eline = zeros(size(pts1,1), 3);
