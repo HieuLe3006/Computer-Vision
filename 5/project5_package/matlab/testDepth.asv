@@ -20,31 +20,17 @@ depthM = get_depth(dispM, K1n, K2n, R1n, R2n, t1n, t2n);
 figure; imagesc(dispM.*(im1>40)); colormap(gray); axis image;
 figure; imagesc(depthM.*(im1>40)); colormap(gray); axis image;
 
-%------- After 
-maxDisp = 20; 
-windowSize = 3;
-
+% Rectification
 % save rectification
 testRectify;
 
 [rectIL, rectIR, bbL, bbR] = warp_stereo(im1, im2, M1, M2);
 
-% figure;
-% imshow(rectIL);
-% figure;
-% imshow(rectIR);
+imshow(recIL);
+imshow(rectIR);
 
 rectIL = rectIL(1:end, 400:end);
 rectIR = rectIR(1:end, 1:end-400);
 
 rectIL = imresize(rectIL, [640, 480]);
 rectIR = imresize(rectIR, [640, 480]);
-
-% Disparity
-dispM_rectified = get_disparity(rectIL, rectIR, 20, 3);
-
-% Depth Map
-depthM_rectified = get_depth(dispM_rectified, K1n, K2n, R1n, R2n, t1n, t2n);
-
-figure; imagesc(dispM_rectified.*(rectIL>40)); colormap(gray); axis image;
-figure; imagesc(depthM_rectified.*(rectIL>40)); colormap(gray); axis image;

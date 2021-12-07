@@ -16,9 +16,8 @@ depthM = zeros(size(dispM));
 for i = 1:size(dispM, 2)
     for j = 1:size(dispM, 1)
         if dispM(j, i) == 0
-            depthM(j, i) = 0;
+            depthM(j, x) = 0;
         else
-            depthM(j, i) = (b*f*dispM(j, i));
-        end
+            
     end
 end

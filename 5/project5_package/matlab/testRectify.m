@@ -35,7 +35,7 @@ mlx = p2t(M1,gtL);
 mrx = p2t(M2,gtR);
 mrx(1,:) = mrx(1,:) + nC ;
 
-hfig = figure; imshow(rectImg) ; hold on; 
-plot(mlx(1,:)'-bbL(1),mlx(2,:)'-bbL(2), 'r*', 'MarkerSize', 10) ;
-plot(mrx(1,:)'-bbR(1),mrx(2,:)'-bbR(2), 'b*', 'MarkerSize', 10) ;
-line([ones(size(gtL,2),1) 2*nC*ones(size(gtL,2),1)]', [mlx(2,:)'-bbL(2) mlx(2,:)'-bbL(2)]') ;
+% hfig = figure; imshow(rectImg) ; hold on; 
+% plot(mlx(1,:)'-bbL(1),mlx(2,:)'-bbL(2), 'r*', 'MarkerSize', 10) ;
+% plot(mrx(1,:)'-bbR(1),mrx(2,:)'-bbR(2), 'b*', 'MarkerSize', 10) ;
+% line([ones(size(gtL,2),1) 2*nC*ones(size(gtL,2),1)]', [mlx(2,:)'-bbL(2) mlx(2,:)'-bbL(2)]') ;
