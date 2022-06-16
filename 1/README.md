@@ -1,3 +1,4 @@
+# Description
 This is a numeric character recognition system that is implemented based on convolutional neural network (CNN) and trained on MNIST dataset. 
 <br>
 The neural network consists of these layers:
