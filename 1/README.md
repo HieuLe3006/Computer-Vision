@@ -1,6 +1,5 @@
 # Description
-This is a numeric character recognition system that is implemented based on convolutional neural network (CNN) and trained on MNIST dataset. 
-<br />
+This is a numeric character recognition system that is implemented based on convolutional neural network (CNN) and trained on MNIST dataset. \s\s
 The neural network consists of these layers:
 - Inner Product layer
 - Pooling layer
