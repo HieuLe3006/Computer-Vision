@@ -8,6 +8,6 @@ The initial provided **BaseNet** consists of the following neural network layers
 - Non-linear activations (ReLU)
 - Normalization
  
-The Loss function used in the first part of the project is *Cross-Entropy* with SGD being the chosen optimizer. 
+The Loss function used in the first part of the project is *Cross-Entropy* with *SGD* being the chosen optimizer. 
 
 ## Part2: 
