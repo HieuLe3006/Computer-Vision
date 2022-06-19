@@ -10,4 +10,14 @@ The initial provided **BaseNet** consists of the following neural network layers
  
 The Loss function used in the first part of the project is *Cross-Entropy* with *SGD* being the chosen optimizer. 
 
-## Part2: 
+## Part2:
+Similar to part 1, this is a model trained on [Caltech-USCD Birds dataset](vision..caltech.eduvsipedia/CUB-200.html) - a dataset consisting of 3000 images in train-dataset and 3033 images in test-dataset of 200 different types of birds. The initial provided **ResNet** acts as a fixed feature extractor and with centercropping being a the only hyperparameter
+ used in the testing process, we achieve a baseline accuracy of 15.5% for our model. 
+<br/>
+In general, we aim to improve this number by performing hyperparameter tuning and data augmentation while trying to avoid overffiting the model. Particularly, these are the hyperparameter adjustments used in part 2:
+- train:
+	- *RandomResizedCrop*
+	- *Normalize*
+- test:
+	- *CenterCrop*
+	- *Normalize*
