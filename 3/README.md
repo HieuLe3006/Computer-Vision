@@ -6,6 +6,6 @@ rdinary least squares is not possible to be used as the projective geometry in t
 <br/> 
 These are the steps to create our AR application:
 - Computing Planar Homographies:
-	1/ Something
-	2/ Something else
+	1. Something
+	2. Something else
 - Creating Augmented Reality app:
