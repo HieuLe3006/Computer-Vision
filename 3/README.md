@@ -5,7 +5,8 @@ This is an **Augmented Reality** application using *planar homographies*.
 rdinary least squares is not possible to be used as the projective geometry in this case is of the form x = λHx′. We can bypass such dilemma by applying *Direct Linear Transform*, where the equation is rewritten into homogeneous equations that are solvable using standard least squares method. 
 <p><br/><p/> 
 These are the steps to create our AR application:
-- Computing Planar Homographies:
+- Something
+	- Computing Planar Homographies:
 	1. Something
 	2. Something else
 - Creating Augmented Reality app:
