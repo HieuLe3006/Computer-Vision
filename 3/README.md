@@ -16,6 +16,7 @@ There are 2 major parts in this project:
 	- Homography Normalization to improve the stability of the solution.
 	- Use **RANSAC algorithm** - an iterative method for estimating a mathematical model from a dataset that contains outlier, to fit model to noisy data. 
 	- HarryPotterize a book: detect a cover of any book and change it to Harry Potter book cover.
+![Image1](miscellaneous/Screenshot_20220621_191953.png)
 2. Create an Augmented Reality application:
 	- HarryPotterize a video ar *source.mov* onto the video *book.mov*. 
 	- Use *imresize* or crop each frame to fit the video onto the video. 
