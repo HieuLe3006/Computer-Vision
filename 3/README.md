@@ -12,14 +12,16 @@ rdinary least squares is not possible to be used as the projective geometry in t
 There are 2 major parts in this project:
 1. Convert a cover of any book into a cover of a HarryPotter book. These are the steps:
 	- Feature detection, description, and matching: find corresponding point pairs between 2 images using **FAST detector** (*detectFASTFeature* function in Matlab)  with **BRIEF descriptor** (*computeBrief* function). In order to better see these points, adjust threshold parameter on *matchFeature()* function) 
+![Image1](miscellaneous/Screenshot_20220621_191934.png	)
 	- Compute Homography: estimate the planar homography from a set of matched point pairs.
 	- Homography Normalization to improve the stability of the solution.
 	- Use **RANSAC algorithm** - an iterative method for estimating a mathematical model from a dataset that contains outlier, to fit model to noisy data. 
 	- HarryPotterize a book: detect a cover of any book and change it to Harry Potter book cover.
-![Image1](miscellaneous/Screenshot_20220621_191953.png)
-2. Create an Augmented Reality application:
+![Image2](miscellaneous/Screenshot_20220621_191953.png)
+1. Create an Augmented Reality application:
 	- HarryPotterize a video ar *source.mov* onto the video *book.mov*. 
+![Image3](miscellaneous/Screenshot_20220621_192011.png)
 	- Use *imresize* or crop each frame to fit the video onto the video. 
 	- The video is played on a book cover of another video. 
-
+![Image4](miscellaneous/Screenshot_20220621_192029.png)
  
