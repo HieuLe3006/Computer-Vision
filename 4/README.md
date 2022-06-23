@@ -3,8 +3,7 @@ One of the major areas of computer vision is 3D reconstruction of an environment
 
 ## Sparse reconstruction
 **Sparse reconstruction** typically contains a number of points and uses them to describe the objects in question. These are the steps:
-- Use **eight point algorithm** to estimate the fundamental matrix.
-<br />
+- Use **eight point algorithm** to estimate the fundamental matrix. <br />
 ![Image1](miscellaneous/Screenshot_20220621_191743.png)
 - Find epipolar correspondences by finding point pairs in a pair of stereo images. 
 - Compute the essential matrix - a 3x3 matrix that relates corresponding points in stereo images assuming that the cameras satisfy the pinhole camera model.
