@@ -7,9 +7,9 @@ One of the major areas of computer vision is 3D reconstruction of an environment
 ![Image1](miscellaneous/Screenshot_20220621_191743.png)
 - Find epipolar correspondences by finding point pairs in a pair of stereo images. 
 - Compute the essential matrix - a 3x3 matrix that relates corresponding points in stereo images assuming that the cameras satisfy the pinhole camera model.
-- Triangulate pairs of 2D points in the images to a set of 3D points.
-<br /> 
+- Triangulate pairs of 2D points in the images to a set of 3D points.<br /> 
 ![Image2](miscellaneous/Screenshot_20220621_191819.png)
 ## Dense reconstruction
 **Dense reconstruction** is more detailed and fine-grained compared to **Sparse reconstruction**. These are the steps:
-- 
+- Compute rectification matrices - a transformation process used to project images onto a common image plane. <br   />
+![Image3](https://upload.wikimedia.org/wikipedia/commons/8/89/Planar_rectification_for_a_rotating_camera..gif)
