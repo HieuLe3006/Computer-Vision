@@ -16,3 +16,7 @@ One of the major areas of computer vision is 3D reconstruction of an environment
 - Perform dense window matching to find per pixel density by creating a disparity map from a pair of rectified images. <br  />
 ![Image4](miscellaneous/Screenshot_20220621_191829.png)
 - Create a depthmap from a disparity map
+
+## Pose estimation
+This part of the project takes a camera matrix from a real image and projects the 3D object (CAD model) back on to the image plane. This can be done by estimating the intrinsic and extrinsic parameters of camera given 2D point x on image and their corresponding 3D points X.<br   />
+![Image5](miscellaneous/Screenshot_20220621_191854.png)
