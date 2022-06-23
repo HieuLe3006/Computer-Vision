@@ -12,7 +12,7 @@ rdinary least squares is not possible to be used as the projective geometry in t
 There are 2 major parts in this project:
 1. Convert a cover of any book into a cover of a HarryPotter book. These are the steps:
 	- Feature detection, description, and matching: find corresponding point pairs between 2 images using **FAST detector** (*detectFASTFeature* function in Matlab)  with **BRIEF descriptor** (*computeBrief* function). In order to better see these points, adjust threshold parameter on *matchFeature()* function). <br/>
-![Image1](miscellaneous/Screenshot_20220621_191934.png	)
+![Image1](miscellaneous/Screenshot_20220621_191934.png)
 	- Compute Homography: estimate the planar homography from a set of matched point pairs.
 	- Homography Normalization to improve the stability of the solution.
 	- Use **RANSAC algorithm** - an iterative method for estimating a mathematical model from a dataset that contains outlier, to fit model to noisy data. 
