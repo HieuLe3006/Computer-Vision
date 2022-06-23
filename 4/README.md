@@ -13,3 +13,6 @@ One of the major areas of computer vision is 3D reconstruction of an environment
 **Dense reconstruction** is more detailed and fine-grained compared to **Sparse reconstruction**. These are the steps:
 - Compute rectification matrices - a transformation process used to project images onto a common image plane. <br   />
 ![Image3](https://upload.wikimedia.org/wikipedia/commons/8/89/Planar_rectification_for_a_rotating_camera..gif)
+- Perform dense window matching to find per pixel density by creating a disparity map from a pair of rectified images. <br  />
+![Image4](miscellaneous/Screenshot_20220621_191829.png)
+- Create a depthmap from a disparity map
